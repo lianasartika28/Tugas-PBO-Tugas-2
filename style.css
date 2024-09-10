@@ -1,0 +1,232 @@
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Subtle background color for contrast */
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    background-image: url('bg.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Styling for the text in the header */
+header h1 {
+    font-size: 60px;
+    margin: 0;
+    color: #fff;
+}
+
+header p {
+    font-size: 28px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Styling each section */
+section {
+    margin: 20px 0;
+    background-color: #ffffff; /* White background for sections */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    width: 90%;
+    max-width: 800px; /* Limit section width */
+}
+
+/* Horizontal rule customization */
+hr {
+    width: 30px;
+    border: 2px solid black;
+    margin: 20px auto;
+}
+
+/* Text styling for headings and paragraphs */
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 10px 0;
+    color: #333; /* Dark gray for text */
+}
+
+/* Styling paragraphs with maximum width for readability */
+p {
+    max-width: 100%;
+    line-height: 1.6; /* Improve readability with line height */
+}
+
+/* Image styling */
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners for table */
+    overflow: hidden; /* Ensures borders stay inside the rounded corners */
+    color: #333;
+}
+
+table td,
+table th {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: start;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+th {
+    background-color: #75bae8; /* Blue header for table */
+    color: white;
+    font-weight: bold;
+}
+
+/* Form input styling */
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Radio buttons, checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #75bae8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #549bb5; /* Slightly darker on hover */
+}
+
+/* Styling for colored background buttons */
+.bg-blue {
+    background-color: #75bae8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.bg-purple {
+    background-color: #b07cc7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.bg-green {
+    background-color: #6acca3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.bg-orange {
+    background-color: #f9a74b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.bg-blue:hover {
+    background-color: #549bb5;
+}
+
+.bg-purple:hover {
+    background-color: #8f63a1;
+}
+
+.bg-green:hover {
+    background-color: #50a488;
+}
+
+.bg-orange:hover {
+    background-color: #d88b3e;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+    section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    img {
+        max-width: 150px; /* Smaller images on mobile */
+    }
+
+    table {
+        width: 100%; /* Table takes full width on smaller screens */
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Full-width button on mobile */
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+}
